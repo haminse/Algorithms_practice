@@ -14,15 +14,12 @@
 
 /*
 pseudo
-
 init pointer1, pointer2 = 0
 while t.length
 compare first var
 if same, both pointer move next
 if not same, only s pointer move
-
 if s reach the end, but t is not yet -> false
-
 when input finished the while loop -> true (that means we reached end of the t)
 */
  var isSubsequence = function(s, t) {
@@ -48,6 +45,3 @@ console.log(isSubsequence("abcde", "ac")); // true
 console.log(isSubsequence("abcde", "tac")); // false
 console.log(isSubsequence("abcde", "abcde")); // true
 console.log(isSubsequence("abcde", "bced")); // false
-
-
-
