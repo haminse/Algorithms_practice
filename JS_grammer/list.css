@@ -3,7 +3,17 @@
 
 }
 
+#btn_plus{
+    background-color: red;
+    border: solid ;
+    /* color: red; */
+}
 
+#btn_minus{
+    background-color: blue;
+    border: solid black ;
+    color: white;
+}
 
 
 .purple{
@@ -12,4 +22,10 @@
 
 .yellow{
     background-color: yellow;
+}
+
+.bar{
+    width : 100%;
+    height : 10%;
+    background-color: aqua;
 }

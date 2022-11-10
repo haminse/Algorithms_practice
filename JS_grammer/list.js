@@ -21,3 +21,32 @@ document.querySelectorAll(".box")[0].classList.remove('purple');
 //toggle -> if class exists ? del : add (always reverse) 
 document.querySelectorAll(".box")[0].classList.toggle("yellow");
 document.querySelectorAll(".box")[0].classList.toggle("yellow");
+
+
+///////// Listner //////////////
+
+// document.getElementById("btn").addEventListner("click", function (){
+//     console.log("click!!!!!!");
+// });
+
+
+/// plus minus button
+var num = 0;
+
+document.getElementById("btn_plus").addEventListener("click", function(){
+    num++;
+    document.getElementById("num").innerHTML = num
+
+});
+
+document.getElementById("btn_minus").addEventListener("click", function(){
+    // set the min value of the num
+    if(num <= 0){num++;}
+    num--;
+    document.getElementById("num").innerHTML = num
+
+});
+
+
+////
+
