@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <style>
+        .timeout{
+            background-color: rgb(255, 255, 0);
+            width : 50%;
+            height : 30%;
+            text-align: center;
+            padding-top: 5%;
+        }
+        .after{
+            background-color: red;
+            width : 100%;
+            height : 100%;
+            text-align: center;
+            font-size: 700%;
+            display: none;
+
+        }
+    </style>
+    <div class = "timeout">
+        I will explode after 7 secs!
+    </div>
+    <div class = "after">BOOM!</div>
+    <script>
+        var timecnt = 7;
+        var col = 255;
+        var decay = col/timecnt;
+        var size = 50;
+        setInterval(function(){
+            timecnt--;
+            col -= decay;
+            size += 2;
+            document.querySelector('.timeout').innerHTML = `I will explode after ${timecnt} secs!`;
+            document.querySelector('.timeout').style.backgroundColor = `rgb(255, ${col}, 0)`;
+            document.querySelector('.timeout').style.width = `${size}%`;
+
+        }, 1000); // 1000 = 1s
+        setTimeout(function(){
+            document.querySelector('.timeout').style.display = "none";
+            document.querySelector('.after').style.display = "block";
+
+        }, 7000)
+    </script>
+</body>
+</html>

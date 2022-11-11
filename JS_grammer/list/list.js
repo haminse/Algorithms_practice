@@ -33,6 +33,8 @@ document.querySelectorAll(".box")[0].classList.toggle("yellow");
 /// plus minus button
 var num = 0;
 
+
+//listner : set function when clcik the button.
 document.getElementById("btn_plus").addEventListener("click", function(){
     num++;
     document.getElementById("num").innerHTML = num
@@ -48,5 +50,24 @@ document.getElementById("btn_minus").addEventListener("click", function(){
 });
 
 
-////
+//// appear the newbar when click the bar
+document.querySelector(".bar").addEventListener("click", function(){
+    if(document.querySelector(".newbar").style.display == "none"){
+        document.querySelector(".bar").innerHTML = "CLICKED!";
+        document.querySelector(".newbar").style.display = "block";
+    }else{
+        document.querySelector(".bar").innerHTML = "click here";
+        document.querySelector(".newbar").style.display = "none";
+    }
+
+});
+
+//other way : use classList.toggle
+// document.querySelector(".bar").addEventListener("click", function(){
+//         document.querySelector(".bar").innerHTML = "CLICKED!";
+//         document.querySelector(".newbar").classList.toggle("show");
+// });
+
+
+
 

@@ -46,7 +46,7 @@
     return ans;
  }
 
-//  console.log(numSubarrayProductLessThanK([10, 5, 2, 6], 100) == 8); //true
+ console.log(numSubarrayProductLessThanK([10, 5, 2, 6], 100) == 8); //true
  console.log(numSubarrayProductLessThanK([1,2,3], 0) == 0); //true
 
 
