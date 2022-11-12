@@ -76,3 +76,4 @@ var findBestSubarray = function(nums, k) {
   var k = 4;
   console.log(findBestSubarray(nums, k));
   console.log(findBestSubarray(nums, k) == 18); // true
+
