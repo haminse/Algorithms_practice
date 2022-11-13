@@ -32,6 +32,7 @@
 //  Input: nums = [4,1,2,1,2]
 //  Output: 4
  
+////////////////////////////////////////////////////////////////////
  
 //My codes
 var singleNumber = function(nums) {
@@ -60,17 +61,17 @@ var singleNumber = function(nums) {
 //  there's dobule for loop, so it tooks long time so far.
 //  I think I can unite seeking num[i] process with lsk[k] === nums[i]
 
+///////////////////////////////////////////////////////////////////////////
+
 // other way
 // 2*sum(set(nums)) - sum(nums) <- it's easy in python!
-
-
 var singleNumber_2 = function(nums) {
     let num_sums = 0, set_sums = 0;
     const set = new Set(nums); // make nums as string
 
     // sum nums
-    for(let i = 0; i < nums.length; i++){
-        num_sums += nums[i];
+    for (let i of nums){
+        num_sums += i;
     }
     // sum set
     for (let j of set) {
@@ -82,4 +83,4 @@ var singleNumber_2 = function(nums) {
 }
 
  //test
- console.log(singleNumber_2([4,1,2,1,2])); //true
+ console.log(singleNumber_2([4,1,2,1,2]) == 4); //true
