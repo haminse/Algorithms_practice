@@ -44,3 +44,5 @@ console.log("-----------------");
 //this one!
 me.army !== undefined && console.log(parsebool(me.army));
 you.army !== undefined && console.log(parsebool(you.army));
+
+
