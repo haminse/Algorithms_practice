@@ -1,2 +1,2 @@
-# JavaScript
-Training JavaScript with algorithms
+# python + JavaScript
+Training algorithms with leetcode
