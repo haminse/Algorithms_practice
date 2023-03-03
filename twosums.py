@@ -4,7 +4,7 @@
 # You may assume that each input would have exactly one solution, and you may not use the same element twice.
 # You can return the answer in any order.
 
-# First Attemtion : It accepted but not working in some cases
+# First Attemtion(FAILED) : It accepted but not working in some cases 
 def twoSum(self, nums, target):
     left = 0
     right = 1
