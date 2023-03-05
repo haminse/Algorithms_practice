@@ -8,7 +8,7 @@
 # 1st Attemtion :Bruth Force
 # Check every cases
 # Time limit Exceeded Error
-# O(n2) complexity. too much.
+# O(n^2) complexity. too much.
 def maxProfit(prices):
     profit = 0
     for i in range(len(prices)):
