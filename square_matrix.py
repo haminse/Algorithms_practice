@@ -1,3 +1,5 @@
+# Question
+# return abs diff of sum of each diagonal values
 def diagonalDifference(arr):
     # Write your code here
     d1, d2 = 0, 0
@@ -7,6 +9,6 @@ def diagonalDifference(arr):
 
     return abs(d1 - d2)
 
-
+# Assertion
 arr = [[1,2,2],[1,2,3],[1,2,3]]
 assert diagonalDifference(arr) == 1
