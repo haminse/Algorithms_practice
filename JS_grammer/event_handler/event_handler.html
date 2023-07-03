@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- for css -->
+<link rel = "stylesheet" href="event_handler.css"/>
+
+<body>
+    <title>Document</title>
+    <h1>Zodiac expain</h1>
+    <ul class="list">
+        <li class = 'tab-button here' data-id = '0'>dragon</li>
+        <li class = 'tab-button' data-id = '1'>pig</li>
+        <li class = 'tab-button' data-id = '2'>snake</li>
+    </ul>
+    
+    <!-- first content -->
+    <div class = "tab-content show">
+        <p>Dargon is so mean</p>
+        <img src = "dragon.png">    
+    </div>
+
+    <!-- sec content -->
+    <div class = "tab-content">
+        <p>Pig is so mean</p>
+        <img src = "pig.png">    
+    </div>
+
+    <!-- third content -->
+    <div class = "tab-content">
+        <p>Snake is so mean</p>
+        <img src = "snake.png">    
+    </div>
+
+
+
+
+    <!-- for event obj -->
+    <p>Location of clicked point</p>
+    <p class = 'msg'>where?</p>
+    <script>
+        const msg = document.querySelector('.msg');
+        function showwhere(e){
+            msg.innerHTML = `my location is ${e.clientX}, ${e.clientY}`
+        }
+        // watch out with `, not ''
+        document.onclick = showwhere;
+    </script>
+    <!-- for js -->
+    <script src = "event_handler.js"></script>
+</body>
+</html>
